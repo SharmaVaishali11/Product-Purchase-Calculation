@@ -1,0 +1,139 @@
+a={0:{"Product":"Shirt","Price":2000},1:{"Product":"Shoes","Price":1200},2:{"Product":"Cap","Price":700},3:{"Product":"Jeans","Price":3000},4:{"Product":"Shades","Price":1000}}
+len=len(a)
+for i in range(0,len):
+    for x in a[i]:
+        print(x,end="   ")
+    break
+print("  ")
+for i in range(0,len):
+    for x in a[0]:
+        print(a[0][x],end="      ")
+    break
+print("  ")
+for i in range(0,len):
+    for x in a[1]:
+        print(a[1][x],end="      ")
+    break
+print("  ")
+for i in range(0,len):
+    for x in a[2]:
+        print(a[2][x],end="      ")
+    break
+print("  ")
+for i in range(0,len):
+    for x in a[3]:
+        print(a[3][x],end="      ")
+    break
+print("  ")
+for i in range(0,len):
+    for x in a[4]:
+        print(a[4][x],end="      ")
+    break
+print("  ")
+for l in range(100):
+    b=input("Enter your product:")
+    if(b=="Shirt")or(b=="Shoes")or(b=="Jeans")or(b=="Cap")or(b=="Shades"):
+        c=int(input("Enter No. of items:"))
+        u=a[0]['Price']*c
+        v=a[1]['Price']*c
+        w=a[2]['Price']*c
+        s=a[3]['Price']*c
+        y=a[4]['Price']*c
+        one={"Product":"Shirt","No. of items":c,"Total Price":u}
+        two={"Product":"Shoes","No. of items":c,"Total Price":v}
+        three={"Product":"Cap","No. of items":c,"Total Price":w}
+        four={"Product":"Jeans","No. of items":c,"Total Price":s}
+        five={"Product":"Shades","No. of items":c,"Total Price":y}
+        if(b=="Shirt"):
+            for k in one:
+                print(k,end="       ")
+            print(" ")    
+            for k in one:
+                print(one[k],end="            ")
+        elif(b=="Shoes"):
+            for ki in two:
+                print(ki,end="       ")
+            print(" ")    
+            for ki in two:
+                print(two[ki],end="            ")
+        elif(b=="Cap"):
+            for kii in three:
+                print(kii,end="       ")
+            print(" ")    
+            for kii in three:
+                print(three[kii],end="            ")
+        elif(b=="Jeans"):
+            for kiv in four:
+                print(kiv,end="       ")
+            print(" ")    
+            for kiv in four:
+                print(four[kiv],end="            ")
+        elif(b=="Shades"):
+            for kv in five:
+                print(kv,end="       ")
+            print(" ")    
+            for kv in five:
+                print(five[kv],end="            ")
+            print(" ")
+        for f in range(100):
+            g=input("Do you want to continue?Y/N:")
+            if(g=="Y"):
+                for q in range(100):
+                    b=input("Enter your product:")
+                    if(b=="Shirt")or(b=="Shoes")or(b=="Jeans")or(b=="Cap")or(b=="Shades"):
+                        c=int(input("Enter No. of items:"))
+                        u=a[0]['Price']*c
+                        v=a[1]['Price']*c
+                        w=a[2]['Price']*c
+                        s=a[3]['Price']*c
+                        y=a[4]['Price']*c
+                        one={"Product":"Shirt","No. of items":c,"Total Price":u}
+                        two={"Product":"Shoes","No. of items":c,"Total Price":v}
+                        three={"Product":"Cap","No. of items":c,"Total Price":w}
+                        four={"Product":"Jeans","No. of items":c,"Total Price":s}
+                        five={"Product":"Shades","No. of items":c,"Total Price":y}
+                        if(b=="Shirt"):
+                            for k in one:
+                                print(k,end="       ")
+                            print(" ")    
+                            for k in one:
+                                print(one[k],end="            ")
+                        elif(b=="Shoes"):
+                            for ki in two:
+                                print(ki,end="       ")
+                            print(" ")    
+                            for ki in two:
+                                print(two[ki],end="            ")
+                        elif(b=="Cap"):
+                            for kii in three:
+                                print(kii,end="       ")
+                            print(" ")    
+                            for kii in three:
+                                print(three[kii],end="            ")
+                        elif(b=="Jeans"):
+                            for kiv in four:
+                                print(kiv,end="       ")
+                            print(" ")    
+                            for kiv in four:
+                                print(four[kiv],end="            ")
+                        elif(b=="Shades"):
+                            for kv in five:
+                                print(kv,end="       ")
+                            print(" ")    
+                            for kv in five:
+                                print(five[kv],end="            ")
+                            print(" ")
+                        break
+                    else:
+                        print("Wrong Value. Enter the product again")                
+            elif(g=="N"):
+                print("Thank u")    
+                break
+            else:
+                    print("Wrong Value. Enter Y OR N") 
+        break
+    elif(b!="Shirt")or(b!="Jeans")(b!="Cap")(b!="Shades")(b!="Shoes"):
+        print("Wrong Value. Enter the product again")
+    else:
+        break
+print("Thanks for Purchase")
